@@ -20,7 +20,11 @@ int main(void)
 			{
 				putchar(n);
 				putchar(m);
-				putchar(32);
+				if (ni != 56)
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 			m++;
 		}
