@@ -1,22 +1,17 @@
 #include "main.h"
 /**
  * print_times_table - prints table
- *
  * @n: variable
  */
 void print_times_table(int n)
 {
-	int h;
-	int v;
-	int p;
+	int h, v, p;
 
 	if (n <= 15 && n >= 0)
 	{
-		h = 0;
-		while (h <= n)
+		for (h = 0; h <= n; h++)
 		{
-			v = 0;
-			while (v <= n)
+			for (v = 0; v <= n; v++)
 			{
 				p = h * v;
 				if (p < 10)
@@ -46,10 +41,8 @@ void print_times_table(int n)
 					_putchar((p - ((p / 100) * 100)) / 10 + '0');
 					_putchar((p % 10) + '0');
 				}
-				v++;
 			}
 			_putchar(10);
-			h++;
 		}
 	}
- }
+}
