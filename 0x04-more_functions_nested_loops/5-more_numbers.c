@@ -11,7 +11,7 @@ void more_numbers(void)
 	unsigned int r;
 
 	r = 0;
-	while (r <= 14)
+	while (r <= 10)
 	{
 		m = 48;
 		while (m <= 49)
