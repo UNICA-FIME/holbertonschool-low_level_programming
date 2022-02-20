@@ -31,10 +31,10 @@ void puts_half(char *str)
 		}
 		if (cont % 2 != 0)
 		{
-		i = cont / 2;
-			while (*(str + (i - 1) / 2) != '\0')
+		i = (cont - 1) / 2;
+			while (*(str + i) != '\0')
 			{
-			_putchar(*(str + (i + 1) / 2));
+			_putchar(*(str + i));
 			i++;
 			}
 		}
