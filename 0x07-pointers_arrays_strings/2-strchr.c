@@ -4,18 +4,23 @@
  *
  * @s: string
  * @c: character
- * Return: *i or NULL
+ * Return: i or NULL
  */
 char *_strchr(char *s, char c)
 {
+	char **i;
 
 	while (*s != '\0')
 	{
 		if (*s == c)
 		{
-			return (s);
+			i = &s;
+			return (*i);
 		}
-		s++;
+		else
+		{
+			s++;
+		}
 	}
 	return (0);
 }
