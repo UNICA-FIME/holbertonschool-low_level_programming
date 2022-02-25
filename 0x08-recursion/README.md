@@ -41,4 +41,8 @@ FYI: The standard library provides a different function: sqrt. Run man sqrt to l
 Write a function that returns 1 if the input integer is a prime number, otherwise return 0.
 
 Prototype: int is_prime_number(int n);
+##7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything
+Write a function that returns 1 if a string is a palindrome and 0 if not.
 
+Prototype: int is_palindrome(char *s);
+An empty string is a palindrome
