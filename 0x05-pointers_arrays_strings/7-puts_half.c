@@ -7,38 +7,30 @@
  */
 void puts_half(char *str)
 {
-	int len;
 	int i, j;
-	int cont;
 
-	cont = 0;
-	len = 0;
-	while (*(str + len) != '\0')
+	i = 0;
+	while (*(str + i) != '\0')
 	{
-		cont = cont + 1;
-		len++;
+		i++;
 	}
-
-		if (cont % 2 == 0)
+	if (i % 2 == 0)
+	{
+		j = i / 2;
+		while (*(str + j) != '\0')
 		{
-			i = cont / 2;
-			while (i < cont)
-			{
-			_putchar(*(str + i));
-			i++;
-			}
-
-		}
-		else
-		{
-		j = (cont - 1) / 2;
-			while (j < cont)
-			{
 			_putchar(*(str + j));
 			j++;
-			}
 		}
+	}
+	else
+	{
+		j = (i - 1) / 2;
+		while (*(str + j) != '\0')
+		{
+			_putchar(*(str + j));
+			j++;
+		}
+	}
 	_putchar(10);
 }
-
-
