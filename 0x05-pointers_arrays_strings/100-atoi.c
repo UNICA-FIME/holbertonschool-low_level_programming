@@ -22,7 +22,7 @@ int _atoi(char *s)
 	j = i;
 	while (*(s + j) >= 48 && *(s + j) <= 57)
 	{
-		res = res * 10 + *(s + j) - '0';
+		res = res * 10 + (*(s + j) - '0');
 		j++;
 	}
 	return (sign * res);
