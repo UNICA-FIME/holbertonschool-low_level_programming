@@ -27,18 +27,17 @@ char *str_concat(char *s1, char *s2)
 		while (*(s2 + j) != '\0')
 			j++;
 	}
-	j++;
-	ptr = (char *)malloc((i + j) * sizeof(char));
+	ptr = (char *)malloc((i + j + 1) * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
 	l = 0;
-	while (*(s1 + l) != '\0')
+	while (l < i)
 	{
 		*(ptr + l) = *(s1 + l);
 		l++;
 	}
 	m = 0;
-	while (*(s2 + m) != '\0')
+	while (l < j)
 	{
 		*(ptr + l) = *(s2 + m);
 		l++;
