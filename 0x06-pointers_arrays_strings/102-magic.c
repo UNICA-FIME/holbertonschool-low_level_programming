@@ -1,9 +1,5 @@
 #include <stdio.h>
-/**
- * main - Entry point
- * @void: void
- * Return: 0 success
- */
+
 int main(void)
 {
 	int n;
