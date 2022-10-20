@@ -45,7 +45,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  * @index: index of key
  * Return: 1 if it exists, 0 otherwise
  */
-size_t hash_table_check(const hash_table_t *ht, const char *key, unsigned int index)
+size_t
+hash_table_check(const hash_table_t *ht, const char *key, unsigned int index)
 {
 	hash_node_t *node;
 
